@@ -12,9 +12,6 @@ interface InterviewDao {
     @Update
     fun updateTopic(topics: InterviewTopics)
 
-    @Delete
-    fun deleteTopic(topics: InterviewTopics)
-
     @Query("SELECT * FROM InterviewTopics")
     fun getInterviewTopics(): LiveData<List<InterviewTopics>>
 

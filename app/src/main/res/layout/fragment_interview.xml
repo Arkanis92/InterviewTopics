@@ -8,14 +8,16 @@
     android:focusable="true"
     tools:context=".ui.InterviewFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvInterview"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTopicText"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:listitem="@layout/interview_item"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        tools:text="Testing"
+        android:gravity="center"
+        android:textSize="50sp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
