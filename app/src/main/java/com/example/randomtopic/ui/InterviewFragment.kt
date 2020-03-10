@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.fragment_interview.*
 class InterviewFragment : Fragment() {
 
     private lateinit var interviewViewModel: InterviewViewModel
-    private var oldRand : Int = -1
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,6 +40,7 @@ class InterviewFragment : Fragment() {
         fab.setOnClickListener {
             interviewViewModel.allTopics.observe(viewLifecycleOwner, Observer {
 
+                var oldRand : Int = -1
                 var rand = (it.indices).random()
 
                 while (rand == oldRand) {

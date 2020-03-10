@@ -7,9 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "topics_table")
 
 data class InterviewTopics(
-    @PrimaryKey
-    @ColumnInfo(
-        name = "topic"
-    )
+    @PrimaryKey(autoGenerate = true)
+    val id: Int? = null,
     val topic: String
 )
